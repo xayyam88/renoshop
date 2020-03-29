@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/tabs.js"></script>
+  </head>
+  <body>
+    <div class="main-container"></div>
+    <div class="cart-wrap__shower"></div>
+    <header>
+      <div class="headroom headroom--fixed" data-tolerance="5" data-offset="205">
+        <div class="top-menu">
+          <div class="menu-wrap container">
+            <div class="number-email__wrap">
+              <div class="number"><img class="svg-formater" src="img/all-icons/phone.svg" alt=""/><a href="callto:+994554240996">
+                  +1
+                  123 456 789</a></div>
+              <div class="email"><img class="svg-formater" src="img/all-icons/envelope.svg" alt=""/><a href="mailto:xeyyamit@gmail.com">info@company.com</a></div>
+            </div>
+            <div class="icons-social"><a href=""><img class="svg-formater" src="img/all-icons/facebook.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/twitter.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/instagram.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/linkedin.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/behance.svg" alt=""/></a></div>
+          </div>
+        </div>
+        <div class="bottom-menu">
+          <div class="menu-wrap container"><a href=""><img src="img/logo.png" alt=""/></a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li><a class="active" href="#">home</a></li>
+                <li><a href="/category-grid.html">women</a></li>
+                <li><a href="/category-grid.html">men</a></li>
+                <li><a href="/category-grid.html">kids</a></li>
+                <li><a href="/category-grid.html">Jewellery</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </nav>
+            <div class="hamburger-wrap">
+              <div class="cart cart-btn"><img class="svg-formater" src="img/all-icons/buy.svg" alt=""/><span class="cart-number">2</span></div>
+              <div class="search"><img class="search-btn svg-formater" src="img/all-icons/search.svg" alt=""/>
+                <input class="search-input" type="text" name="search" placeholder="Search.."/><img class="search-input__close svg-formater" src="img/all-icons/close.svg" alt=""/>
+              </div>
+              <div class="nav_bg"><img class="nav_bar svg-formater" src="img/all-icons/menu.svg" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </div><!--header-space-->
+      <div class="header-space"></div><!--hamburger-menu-->
+      <div class="hamburger-menu">
+        <nav>
+          <div class="navigation">
+            <div class="navigation-top"><a href=""><img src="img/logo.png" alt=""/></a>
+              <div class="icons-social"><a href=""><img class="svg svg-formater" src="img/all-icons/facebook.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/twitter.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/instagram.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/linkedin.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/behance.svg" alt=""/></a></div>
+            </div>
+            <div class="navigation-body">
+              <div class="tabs" id="tabs">
+                <ul class="tabs-title">
+                  <li><a href="#tabs-1">MENU</a></li>
+                  <li><a href="#tabs-2">Categories</a></li>
+                </ul>
+                <div id="tabs-1">
+                  <ul>
+                    <li><a class="active" href="#">home</a></li>
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">men</a></li>
+                    <li><a href="#">kids</a></li>
+                    <li><a href="#">Jewellery</a></li>
+                    <li><a href="#">Accessories</a></li>
+                  </ul>
+                </div>
+                <div id="tabs-2">
+                  <ul class="menu-categories">
+                    <li><a href="">accessories <span>(15)</span></a></li>
+                    <li><a href="">Dresses <span>(50)</span></a></li>
+                    <li><a href="">Women <span>(150)</span></a></li>
+                    <li><a href="">Men <span>(150)</span></a></li>
+                    <li><a href="">Watch <span>(150)</span></a></li>
+                    <li><a href="">Clothing <span>(150)</span></a></li>
+                    <li><a href="">Bags <span>(150)</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="navigation-fotter">
+              <div class="number"><img class="svg-formater" src="img/all-icons/phone.svg" alt=""/><a href="callto:+994554240996">+1 123 456 789</a></div>
+              <div class="email"><img class="svg-formater" src="img/all-icons/envelope.svg" alt=""/><a href="mailto:xeyyamit@gmail.com">info@company.com</a></div>
+            </div>
+          </div>
+        </nav>
+      </div><!--.cart-->
+      <div class="cart-wrap">
+        <div class="cart-wrap__header">
+          <h3 class="widget-title">Shopping <span>cart</span></h3>
+          <div class="close-side-widget">close<img class="svg-formater" src="img/all-icons/close.svg" alt=""/></div>
+        </div>
+        <div class="cart-wrap__body">
+          <ul class="cart-body">
+            <li class="cart-item"><a class="cart-item__link" href=""><img class="cart-item__img" src="https://woodmart.xtemos.com/wp-content/uploads/2016/08/product-accessories-10.jpg" alt=""/>
+                <div class="cart-info"><span class="product-title">Decoration wooden present </span><span class="quantity">1 &times; <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>89.00</span></span></div><img class="cart-item__romove svg-formater" src="img/all-icons/close.svg" alt=""/></a></li>
+            <li class="cart-item"><a class="cart-item__link" href=""><img class="cart-item__img" src="https://woodmart.xtemos.com/wp-content/uploads/2016/08/product-accessories-10.jpg" alt=""/>
+                <div class="cart-info"><span class="product-title">Decoration wooden present </span><span class="quantity">1 &times; <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>89.00</span></span></div><img class="cart-item__romove svg-formater" src="img/all-icons/close.svg" alt=""/></a></li>
+            <li class="cart-item"><a class="cart-item__link" href=""><img class="cart-item__img" src="https://woodmart.xtemos.com/wp-content/uploads/2016/08/product-accessories-10.jpg" alt=""/>
+                <div class="cart-info"><span class="product-title">Decoration wooden present </span><span class="quantity">1 &times; <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>89.00</span></span></div><img class="cart-item__romove svg-formater" src="img/all-icons/close.svg" alt=""/></a></li>
+            <li class="cart-item"><a class="cart-item__link" href=""><img class="cart-item__img" src="https://woodmart.xtemos.com/wp-content/uploads/2016/08/product-accessories-10.jpg" alt=""/>
+                <div class="cart-info"><span class="product-title">Decoration wooden present </span><span class="quantity">1 &times; <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>89.00</span></span></div><img class="cart-item__romove svg-formater" src="img/all-icons/close.svg" alt=""/></a></li>
+            <li class="cart-item"><a class="cart-item__link" href=""><img class="cart-item__img" src="https://woodmart.xtemos.com/wp-content/uploads/2016/08/product-accessories-10.jpg" alt=""/>
+                <div class="cart-info"><span class="product-title">Decoration wooden present </span><span class="quantity">1 &times; <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>89.00</span></span></div><img class="cart-item__romove svg-formater" src="img/all-icons/close.svg" alt=""/></a></li>
+          </ul>
+          <!-- end product list-->
+        </div>
+        <div class="cart-wrap__fotter">
+          <div class="shopping-cart__total"><strong>Subtotal:</strong><span class="shopping-cart__price"><span class="shopping-cart__symbol">$</span>199.00</span></div>
+          <div class="shopping-cart__button"><a class="btn-cart button" href="/cart.html">View cart</a><a class="btn-checkout button" href="/checkout.html">Checkout</a></div>
+        </div>
+      </div>
+    </header>
+    <main> 
+      <div class="container-categorys container-product">
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Shop</a></li>
+          <li class="active">Comparison</li>
+        </ul>
+        <div class="container-inner-category product-inner">
+          <div class="product-details__wrap">
+            <div class="product-slider__wrap">
+              <div class="product-slider">
+                <div class="product-slider__item"><img src="https://data.mecshopping.it/imgprodotto/poncho-nero-in-pelliccia_203262_zoom.jpg" alt=""/></div>
+                <div class="product-slider__item"><img src="https://woodmartcdn-cec2.kxcdn.com/wp-content/uploads/2017/04/fashion-default-product-3-2.jpg" alt=""/></div>
+                <div class="product-slider__item"><img src="https://data.mecshopping.it/imgprodotto/poncho-nero-in-pelliccia_203262_zoom.jpg" alt=""/></div>
+                <div class="product-slider__item"><img src="img/img-products/products-img.png" alt=""/></div>
+              </div>
+              <div class="product-slider-miniator"><img class="product-slider-miniator__item" src="img/img-products/product-min.png" alt=""/><img class="product-slider-miniator__item" src="img/img-products/product-min.png" alt=""/><img class="product-slider-miniator__item" src="img/img-products/product-min.png" alt=""/><img class="product-slider-miniator__item" src="img/img-products/product-min.png" alt=""/><img class="product-slider-miniator__item" src="img/img-products/product-min.png" alt=""/><img class="product-slider-miniator__item" src="img/img-products/product-min.png" alt=""/></div>
+            </div>
+            <div class="product-details">
+              <div class="best-seller_slider-item">
+                <div class="product-content-wrap">      
+                  <div class="best-seller_product-title">This is product name</div>
+                  <div class="best-seller_price-stars-wrap">
+                    <div class="best-seller_product-price">
+                       $250.00</div>
+                    <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                  </div>
+                  <p class="best-seller_product-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <div class="best-seller_product-add">
+                    <div class="size-select__wrap">
+                      <select class="size-select">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                      <form class="select-color" action="/action_page.php">
+                        <label for="favcolor">Select color</label>
+                        <input id="favcolor" type="color" name="favcolor" value="#000000"/>
+                      </form>
+                    </div>
+                    <div class="input-group">
+                      <input class="button-minus" type="button" value="-" data-field="quantity"/>
+                      <input class="quantity-field" type="number" step="1" max="" value="1" name="quantity"/>
+                      <input class="button-plus" type="button" value="+" data-field="quantity"/>
+                    </div>
+                    <div class="add-cart-like-compare__wrap">
+                      <button class="button buttom-add-cart"><img class="svg-formater" src="img/all-icons/cart-list.svg" alt=""/>Add to cart</button><a class="buttom-add-like-compare" href=""><img class="svg-formater" src="img/all-icons/like-list.svg" alt=""/></a><a class="buttom-add-like-compare" href=""><img class="svg-formater" src="img/all-icons/compare-list.svg" alt=""/></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-comments__wrap" id="tabs-comments">
+          <ul class="tabs-comments-style">
+            <li><a href="#tabs-1">Description</a></li>
+            <li><a href="#tabs-2">Reviews (2)</a></li>
+          </ul>
+          <div class="tabs-style" id="tabs-1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="tabs-style" id="tabs-2">
+            <div class="reviews-wrap"><span class="comment-count">1 reviews for Etiam tristique nisl</span>
+              <div class="comment-wrap">
+                <div class="comment-img"><img src="img/img-products/comment-img.png" alt=""/></div>
+                <div class="comment-text">
+                  <div class="comment-starts-date__wrap">
+                    <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                    <div class="comment-date_wrap">Jun 3,2017</div>
+                  </div><span class="person-name">JOHN GREEN</span>
+                  <p class="person-reviews">This will go great with my Hoodie that I ordered a few weeks ago</p>
+                </div>
+              </div>
+              <div class="review_form_wrapper">
+                <h3 class="comment-form-title">Add a review</h3>
+                <form class="comment-form" id="commentform" action="">
+                  <div class="comment-name-email__wrap">
+                    <input class="comment-form-author" type="name" name="name" placeholder="Your name ..."/>
+                    <input class="comment-form-email" type="email" name="email" placeholder="Your email ..."/>
+                  </div>
+                  <div class="comment-form-comment">
+                    <label for="comment">Your Review</label>
+                    <div class="comment-form-rating">
+                      <label for="">Your Rating:</label>
+                      <div class="best-seller_product-stars">
+                        <div class="stars-wrap"><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                        <div class="stars-wrap"><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                        <div class="stars-wrap"><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                        <div class="stars-wrap"><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                        <div class="stars-wrap"><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                      </div>
+                    </div>
+                  </div>
+                  <textarea id="comment" name="comment">                                     </textarea>
+                  <p class="form-submit">
+                    <button class="button">Submit</button>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="related-products__wrap">
+          <div class="related-products__title">
+            <h3>Related Products</h3>
+          </div>
+          <div class="related-products__slider">
+            <div class="best-seller_slider-item">
+              <div class="best-seller_product-img">
+                <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+              </div>
+              <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+              <div class="best-seller_product-price">$250.00</div>
+              <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+            </div>
+            <div class="best-seller_slider-item">
+              <div class="best-seller_product-img">
+                <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+              </div>
+              <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+              <div class="best-seller_product-price">$250.00</div>
+              <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+            </div>
+            <div class="best-seller_slider-item">
+              <div class="best-seller_product-img">
+                <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+              </div>
+              <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+              <div class="best-seller_product-price">$250.00</div>
+              <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+            </div>
+            <div class="best-seller_slider-item">
+              <div class="best-seller_product-img">
+                <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+              </div>
+              <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+              <div class="best-seller_product-price">$250.00</div>
+              <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+            </div>
+            <div class="best-seller_slider-item">
+              <div class="best-seller_product-img">
+                <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+              </div>
+              <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+              <div class="best-seller_product-price">$250.00</div>
+              <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="top__footer-wrap">
+        <div class="top__footer footer-container">
+          <div class="contact-with">We&rsquo;re confident we&rsquo;ve provided all the best for you. Stay connect with us</div>
+          <div class="icons-social"><a href=""><img class="svg svg-formater" src="img/all-icons/facebook.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/twitter.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/instagram.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/linkedin.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/behance.svg" alt=""/></a></div>
+        </div>
+      </div>
+      <div class="center__footer footer-container">
+        <div class="site-footer__widget footer-links">
+          <h5 class="footer-links__title">Information</h5>
+          <ul class="footer-links__list">
+            <li><a href="">Delivery Information</a></li>
+            <li><a href="">Discount</a></li>
+            <li><a href="">Sitemap</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">My Account</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__widget footer-links">
+          <h5 class="footer-links__title">My account</h5>
+          <ul class="footer-links__list">
+            <li><a href="">Sign In</a></li>
+            <li><a href="">View Cart</a></li>
+            <li><a href="">My Wishlist</a></li>
+            <li><a href="">Check out</a></li>
+            <li><a href="">Track My Order</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__widget footer-links">
+          <h5 class="footer-links__title">Help</h5>
+          <ul class="footer-links__list">
+            <li><a href="">F.A.Q</a></li>
+            <li><a href="">Shipping</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__widget footer-links">
+          <h5 class="footer-links__title">Contact info</h5>
+          <ul class="footer-links__list">
+            <li><a href=""><img class="svg-2 svg-formater" src="img/all-icons/globe.svg" alt=""/> 1234 Your
+                                        Address, Country</a></li>
+            <li><a href=""><img class="svg-3 svg-formater" src="img/all-icons/phone.svg" alt=""/>+1 234 5678
+                                        9999</a></li>
+            <li><a class="footer-email" href=""><img class="svg-3 svg-formater" src="img/all-icons/envelope.svg" alt=""/>mail@domain.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom__fotter-wrap">
+        <div class="bottom__fotter footer-container">
+          <div class="bottom__fotter-copyright">
+            Copyright 2017 RenoshopBee all right reserved - Design by
+            BeeStudios
+          </div>
+          <div class="site-footer__payments"><img src="img/all-icons/visa.png" alt=""/><img src="img/all-icons/paypal.png" alt=""/><img src="img/all-icons/amazon.png" alt=""/><img src="img/all-icons/maestro.png" alt=""/><img src="img/all-icons/card.png" alt=""/></div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+      <script src="js/libs.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/price-plus-minis.js"></script>
+      <script src="js/price_range_script.js"></script>
+      <script src="js/jquery.zoom.min.js"></script>
+    </footer>
+  </body>
+</html>

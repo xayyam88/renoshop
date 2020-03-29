@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        title Document
+        link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap', rel='stylesheet')
+        link(rel='stylesheet', href='css/style.min.css')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css')
+        script(src='https://code.jquery.com/jquery-1.12.4.js')
+        script(src='js/tabs.js')
+    body
+        .main-container
+        .cart-wrap__shower
+        header
+            include blocks/header.pug
+        //- Header end       
+        main
+            .checkout-container
+                ul.breadcrumb
+                    li
+                        a(href='#') Home
+                    li
+                        a(href='#') Page
+                    li
+                        a(href='#') Shop
+                    li.active Checkout
+                .checkout-wrap
+                    .checkout-content
+                        .billing-details__wrap
+                            h3.widget-title Billing Details
+                            .fname-lname__wrap
+                                .fname-wrap
+                                    label.checkout-lable.input-label(for='input-label')
+                                        | First Name 
+                                        span *
+                                    input#test.input-class(type='text', placeholder='Enter your coupon here')
+                                .lname-wrap
+                                    label.checkout-lable.input-label(for='input-label')
+                                        | Last Name 
+                                        span *
+                                    input#test.input-class(type='text', placeholder='Enter your coupon here')
+                            .country-wrap
+                                label.checkout-lable.input-label(for='input-label')
+                                    | Country 
+                                    span *
+                                input#test.input-class(type='text', placeholder='Enter your coupon here')
+                            .company-wrap
+                                label.checkout-lable.input-label(for='input-label') Company Name 
+                                input#test.input-class(type='text', placeholder='Enter your coupon here')
+                            .postcode-wrap
+                                label.checkout-lable.input-label(for='input-label') Postcode / Zip 
+                                input#test.input-class(type='text', placeholder='Enter your coupon here')
+                            .town-wrap
+                                label.checkout-lable.input-label(for='input-label')
+                                    | Town / City 
+                                    span *
+                                input#test.input-class(type='text', placeholder='Enter your coupon here')
+                            .fname-lname__wrap
+                                .fname-wrap
+                                    label.checkout-lable.input-label(for='input-label')
+                                            | Email Address 
+                                            span *
+                                    input#test.input-class(type='text', placeholder='Enter your coupon here')
+                                .lname-wrap
+                                    label.checkout-lable.input-label(for='input-label')
+                                        | Phone 
+                                        span *
+                                    input#test.input-class(type='text', placeholder='Enter your coupon here')
+                            .input-checout__wrap
+                                label.input-container
+                                    | Create an account?
+                                    input(type='checkbox')
+                                    span.checkmark
+                        .your-order__wrap
+                            h3.widget-title Billing Details
+                            table.cart-total
+                                tbody
+                                    tr.cart-total__tr2
+                                        th Product
+                                        td Total
+                                    tr.cart-total__tr
+                                        th Casual men wearing cool shoe x 1
+                                        td $ 120
+                                    tr.cart-total__tr2
+                                        th Casual men wearing x 2
+                                        td $ 280
+                                    tr.cart-total__tr
+                                        th Subtotal
+                                        td $ 400
+                                    tr.cart-total__tr2
+                                        th Shipping
+                                        td Free Shipping
+                                    tr.cart-total__tbodyend
+                                        th Total
+                                        td $ 400
+                                tfoot
+                                    tr
+                                        td
+                                            label.input-container
+                                                | Direct Bank Transfer
+                                                input(type='checkbox')
+                                                span.checkmark
+                                            .checkmark_info
+                                                | Make your payment directly into our bank account.
+                                                | Please use your Order ID as the payment reference.
+                                                | Your order won&rsquo;t be shipped until the funds have
+                                                | cleared in our account.
+                                    tr.cart-total__tr
+                                        td
+                                            label.input-container
+                                                | Cheque Payment
+                                                input(type='checkbox')
+                                                span.checkmark
+                                    tr
+                                        td
+                                            label.input-container
+                                                | PayPal
+                                                input(type='checkbox')
+                                                span.checkmark
+                    .checkout-button-wrap
+                        button.button.checkout-button Place order
+
+                //- fotter
+        include blocks/fotter.pug
+        //- fotter end

@@ -1,0 +1,12 @@
+@mixin poppins {
+        font-family: 'Poppins', sans-serif;
+}
+@mixin roboto {
+    font-family: 'Roboto', sans-serif;
+}
+@mixin hover{
+    &:hover{
+        color: $main-color;
+        transition: 1s;
+    }
+}

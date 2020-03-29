@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        title Document
+        link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap', rel='stylesheet')
+        link(rel='stylesheet', href='css/style.min.css')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css')
+        script(src='https://code.jquery.com/jquery-1.12.4.js')
+        script(src='js/tabs.js')
+    body
+        .main-container
+        .cart-wrap__shower
+        header
+            include blocks/header.pug
+        //- Header end
+
+        main
+            .cart-container
+                ul.breadcrumb
+                    li
+                        a(href='#') Home
+                    li
+                        a(href='#') Page
+                    li
+                        a(href='#') Shop
+                    li.active Cart
+                .cart-order__wrap
+                    form(action='', method='')
+                        .cart-order-section
+                            table.cart-order-list
+                                thead
+                                    tr
+                                        th.remove-border(role='columnheader')
+                                        th.products-border(role='columnheader') Products
+                                        th(role='columnheader') Color &amp; Size
+                                        th(role='columnheader') Quantity
+                                        th(role='columnheader') Price
+                                        th.remove-border(role='columnheader') Total
+                                        th(role='columnheader')
+                                tbody
+                                    tr
+                                        td.remove-border(data-lable='img')
+                                            img.cart-order__img(src='img/img-products/kedy.png', alt='')
+                                        td(data-lable='name')
+                                            a(href='') Casual men wearing cool shoe
+                                        td.cart-size(data-lable='size')
+                                            span
+                                                | Size: XL 
+                                                br
+                                                |  Color: Black
+                                        td(data-lable='price')
+                                            input.input-text.qty.text(type='text', value='1')
+                                        td
+                                            span $120
+                                        td.remove-border(data-lable='total')
+                                            span $120
+                                        td(data-lable='remove')
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/remove-order.svg', alt='')
+                                    tr
+                                        td.remove-border(data-lable='img')
+                                            img.cart-order__img(src='img/img-products/kedy.png', alt='')
+                                        td(data-lable='name')
+                                            a(href='') Casual men wearing cool shoe
+                                        td.cart-size(data-lable='size')
+                                            span
+                                                | Size: XL 
+                                                br
+                                                |  Color: Black
+                                        td(data-lable='price')
+                                            input.input-text.qty.text(type='text', value='1')
+                                        td
+                                            span $120
+                                        td.remove-border(data-lable='total')
+                                            span $120
+                                        td(data-lable='remove')
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/remove-order.svg', alt='')
+                                    tfoot
+                                        tr
+                                            td.table-tfoot(colspan='7')
+                                                button.button.update-button Update Cart
+                                                button.button Continue shopping
+                        .bottom-section__wrap
+                            .coupon-section
+                                h3.widget-title Use Coupon Code
+                                label.input-label(for='input-label') Enter Your Coupon Here
+                                .cart-order-inputs__wrap
+                                    input#test.cart-order-input(type='input-label', placeholder='Enter your coupon here')
+                                    button.button Apply
+                            .voucher-section
+                                h3.widget-title Use Gift Voucher
+                                label.input-label(for='input-label') Enter Your Gift Voucher Code Here
+                                .cart-order-inputs__wrap
+                                    input#test.cart-order-input(type='input-label', placeholder='Enter your gift voucher code here')
+                                    button.button Apply
+                            .shipping-section
+                                h3.widget-title Shipping Availability
+                                label.input-label(for='input-label') Choose a car:
+                                .shipping-inputs__wrap
+                                    .shipping-wrap                                 
+                                        select.input-label(for='input-label')
+                                            option(value='volvo') Volvo
+                                            option(value='saab') Saab
+                                            option(value='opel') Opel
+                                            option(value='audi') Audi
+                                    .shipping-wrap
+                                        label.input-label(for='input-label') Choose a car:
+                                        select.input-label(for='input-label')
+                                            option(value='volvo') Volvo
+                                            option(value='saab') Saab
+                                            option(value='opel') Opel
+                                            option(value='audi') Audi
+                                    .shipping-wrap
+                                        label.input-label(for='input-label') Enter Your Gift Voucher Code Here
+                                        input#test.cart-order-input(type='input-label', placeholder='Enter your gift voucher code here')
+                                    button.button.update-totals Update Totals
+                            .shopping-calcuation-section
+                                h3.widget-title Shopping cart calcuation
+                                table.shopping-calcuation-table
+                                    tbody
+                                        tr
+                                        th Subtotal
+                                        td $450
+                                        tr
+                                        th Coupon
+                                        td - $50
+                                        tr
+                                        th Shipping
+                                        td Free Shipping
+                                    tfoot
+                                        tr
+                                        th Total
+                                        td $400
+                                .checkout-button-wrap
+                                    button.button.checkout-button Proceed to Checkout
+                //- fotter
+        include blocks/fotter.pug
+        //- fotter end

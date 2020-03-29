@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        title Document
+        link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap', rel='stylesheet')
+        link(rel='stylesheet', href='css/style.min.css')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css')
+        script(src='https://code.jquery.com/jquery-1.12.4.js')
+        script(src='js/tabs.js')
+    body
+        .main-container
+        .cart-wrap__shower
+        header
+            include blocks/header.pug
+        //- Header end
+        main
+            .checkout-container
+                ul.breadcrumb
+                    li
+                        a(href='#') Home
+                    li
+                        a(href='#') Page
+                    li
+                        a(href='#') Shop
+                    li.active Comparison
+                .compare-wrap
+                    table.compare-table
+                        tbody
+                            tr
+                            th Products
+                            td.compare-name__color Casual men wearing cool shoe
+                            td.compare-name__color Casual men wearing cool shoe
+                            td.compare-name__color Casual men wearing cool shoe
+                            tr
+                            th Image
+                            td.td-center
+                                img.img-compare(src='img/img-products/rukzak.png', alt='')
+                            td.td-center
+                                img.img-compare(src='img/img-products/rukzak.png', alt='')
+                            td.td-center
+                                img.img-compare(src='img/img-products/rukzak.png', alt='')
+                            tr
+                            th Price
+                            td $120
+                            td $120
+                            td $120
+                            tr
+                            th Rating
+                            td
+                                .best-seller_product-stars
+                                    img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                    img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                    img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                    img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                    img.svg-formater(src='img/all-icons/star-e.svg', alt='')
+                            td
+                                .best-seller_product-stars
+                                    img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                    img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                    img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                    img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                    img.svg-formater(src='img/all-icons/star-e.svg', alt='')
+                            td
+                                .best-seller_product-stars
+                                    img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                    img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                    img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                    img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                    img.svg-formater(src='img/all-icons/star-e.svg', alt='')
+                            tr
+                                th Model
+                                td Product 1
+                                td Product 1
+                                td Product 1
+                            tr
+                                th Brand
+                                td Hewlett-Packard
+                                td Hewlett-Packard
+                                td Hewlett-Packard
+                            tr
+                            th Summary
+                            td
+                                | Lorem ipsum dolor sit amet, consectetur
+                                | adipisicing elit, sed do eiusmod tempor
+                                | incididunt ut labore et dolore magna
+                                | aliqua.
+                            td
+                                | Lorem ipsum dolor sit amet, consectetur
+                                | adipisicing elit, sed do eiusmod tempor
+                                | incididunt ut labore et dolore magna
+                                | aliqua.
+                            td
+                                | Lorem ipsum dolor sit amet, consectetur
+                                | adipisicing elit, sed do eiusmod tempor
+                                | incididunt ut labore et dolore magna
+                                | aliqua.
+                            tr
+                            th  
+                            td.td-center
+                                .button-compare__wrap
+                                    button.button Add to cart
+                                    img(src='img/all-icons/remove-order.svg', alt='')
+                            td.td-center
+                                .button-compare__wrap
+                                    button.button.update-button Add to cart
+                                    img(src='img/all-icons/remove-order.svg', alt='')
+                            td.td-center
+                                .button-compare__wrap
+                                    button.button.update-button Add to cart
+                                    img(src='img/all-icons/remove-order.svg', alt='')
+
+                //- fotter
+        include blocks/fotter.pug
+        //- fotter end

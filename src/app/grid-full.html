@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/tabs.js"></script>
+  </head>
+  <body>
+    <div class="main-container"></div>
+    <div class="cart-wrap__shower"></div>
+    <header>
+      <div class="headroom headroom--fixed" data-tolerance="5" data-offset="205">
+        <div class="top-menu">
+          <div class="menu-wrap container">
+            <div class="number-email__wrap">
+              <div class="number"><img class="svg-formater" src="img/all-icons/phone.svg" alt=""/><a href="callto:+994554240996">
+                  +1
+                  123 456 789</a></div>
+              <div class="email"><img class="svg-formater" src="img/all-icons/envelope.svg" alt=""/><a href="mailto:xeyyamit@gmail.com">info@company.com</a></div>
+            </div>
+            <div class="icons-social"><a href=""><img class="svg-formater" src="img/all-icons/facebook.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/twitter.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/instagram.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/linkedin.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/behance.svg" alt=""/></a></div>
+          </div>
+        </div>
+        <div class="bottom-menu">
+          <div class="menu-wrap container"><a href=""><img src="img/logo.png" alt=""/></a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li><a class="active" href="#">home</a></li>
+                <li><a href="/category-grid.html">women</a></li>
+                <li><a href="/category-grid.html">men</a></li>
+                <li><a href="/category-grid.html">kids</a></li>
+                <li><a href="/category-grid.html">Jewellery</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </nav>
+            <div class="hamburger-wrap">
+              <div class="cart cart-btn"><img class="svg-formater" src="img/all-icons/buy.svg" alt=""/><span class="cart-number">2</span></div>
+              <div class="search"><img class="search-btn svg-formater" src="img/all-icons/search.svg" alt=""/>
+                <input class="search-input" type="text" name="search" placeholder="Search.."/><img class="search-input__close svg-formater" src="img/all-icons/close.svg" alt=""/>
+              </div>
+              <div class="nav_bg"><img class="nav_bar svg-formater" src="img/all-icons/menu.svg" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </div><!--header-space-->
+      <div class="header-space"></div><!--hamburger-menu-->
+      <div class="hamburger-menu">
+        <nav>
+          <div class="navigation">
+            <div class="navigation-top"><a href=""><img src="img/logo.png" alt=""/></a>
+              <div class="icons-social"><a href=""><img class="svg svg-formater" src="img/all-icons/facebook.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/twitter.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/instagram.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/linkedin.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/behance.svg" alt=""/></a></div>
+            </div>
+            <div class="navigation-body">
+              <div class="tabs" id="tabs">
+                <ul class="tabs-title">
+                  <li><a href="#tabs-1">MENU</a></li>
+                  <li><a href="#tabs-2">Categories</a></li>
+                </ul>
+                <div id="tabs-1">
+                  <ul>
+                    <li><a class="active" href="#">home</a></li>
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">men</a></li>
+                    <li><a href="#">kids</a></li>
+                    <li><a href="#">Jewellery</a></li>
+                    <li><a href="#">Accessories</a></li>
+                  </ul>
+                </div>
+                <div id="tabs-2">
+                  <ul class="menu-categories">
+                    <li><a href="">accessories <span>(15)</span></a></li>
+                    <li><a href="">Dresses <span>(50)</span></a></li>
+                    <li><a href="">Women <span>(150)</span></a></li>
+                    <li><a href="">Men <span>(150)</span></a></li>
+                    <li><a href="">Watch <span>(150)</span></a></li>
+                    <li><a href="">Clothing <span>(150)</span></a></li>
+                    <li><a href="">Bags <span>(150)</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="navigation-fotter">
+              <div class="number"><img class="svg-formater" src="img/all-icons/phone.svg" alt=""/><a href="callto:+994554240996">+1 123 456 789</a></div>
+              <div class="email"><img class="svg-formater" src="img/all-icons/envelope.svg" alt=""/><a href="mailto:xeyyamit@gmail.com">info@company.com</a></div>
+            </div>
+          </div>
+        </nav>
+      </div><!--.cart-->
+      <div class="cart-wrap">
+        <div class="cart-wrap__header">
+          <h3 class="widget-title">Shopping <span>cart</span></h3>
+          <div class="close-side-widget">close<img class="svg-formater" src="img/all-icons/close.svg" alt=""/></div>
+        </div>
+        <div class="cart-wrap__body">
+          <ul class="cart-body">
+            <li class="cart-item"><a class="cart-item__link" href=""><img class="cart-item__img" src="https://woodmart.xtemos.com/wp-content/uploads/2016/08/product-accessories-10.jpg" alt=""/>
+                <div class="cart-info"><span class="product-title">Decoration wooden present </span><span class="quantity">1 &times; <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>89.00</span></span></div><img class="cart-item__romove svg-formater" src="img/all-icons/close.svg" alt=""/></a></li>
+            <li class="cart-item"><a class="cart-item__link" href=""><img class="cart-item__img" src="https://woodmart.xtemos.com/wp-content/uploads/2016/08/product-accessories-10.jpg" alt=""/>
+                <div class="cart-info"><span class="product-title">Decoration wooden present </span><span class="quantity">1 &times; <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>89.00</span></span></div><img class="cart-item__romove svg-formater" src="img/all-icons/close.svg" alt=""/></a></li>
+            <li class="cart-item"><a class="cart-item__link" href=""><img class="cart-item__img" src="https://woodmart.xtemos.com/wp-content/uploads/2016/08/product-accessories-10.jpg" alt=""/>
+                <div class="cart-info"><span class="product-title">Decoration wooden present </span><span class="quantity">1 &times; <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>89.00</span></span></div><img class="cart-item__romove svg-formater" src="img/all-icons/close.svg" alt=""/></a></li>
+            <li class="cart-item"><a class="cart-item__link" href=""><img class="cart-item__img" src="https://woodmart.xtemos.com/wp-content/uploads/2016/08/product-accessories-10.jpg" alt=""/>
+                <div class="cart-info"><span class="product-title">Decoration wooden present </span><span class="quantity">1 &times; <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>89.00</span></span></div><img class="cart-item__romove svg-formater" src="img/all-icons/close.svg" alt=""/></a></li>
+            <li class="cart-item"><a class="cart-item__link" href=""><img class="cart-item__img" src="https://woodmart.xtemos.com/wp-content/uploads/2016/08/product-accessories-10.jpg" alt=""/>
+                <div class="cart-info"><span class="product-title">Decoration wooden present </span><span class="quantity">1 &times; <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>89.00</span></span></div><img class="cart-item__romove svg-formater" src="img/all-icons/close.svg" alt=""/></a></li>
+          </ul>
+          <!-- end product list-->
+        </div>
+        <div class="cart-wrap__fotter">
+          <div class="shopping-cart__total"><strong>Subtotal:</strong><span class="shopping-cart__price"><span class="shopping-cart__symbol">$</span>199.00</span></div>
+          <div class="shopping-cart__button"><a class="btn-cart button" href="/cart.html">View cart</a><a class="btn-checkout button" href="/checkout.html">Checkout</a></div>
+        </div>
+      </div>
+    </header>
+    <main> 
+      <div class="container-categorys-full-grid">
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Shop</a></li>
+          <li class="active">Comparison</li>
+        </ul>
+        <div class="container-inner-categorys">
+          <div class="products-list-container">
+            <div class="pruducts-top-filters">
+              <div class="show-sidebar__wrap">
+                <div class="show-sidebar">
+                  <div class="show-sidebar-buttom"><img class="svg-formater" src="img/all-icons/menu.svg" alt=""/><span>Show sidebar</span></div>
+                  <div class="left-sidebar">
+                    <div class="left-sidebar-header cart-wrap__header">
+                      <h3 class="widget-title">Filter <span>product</span></h3>
+                      <div class="close-side-widget">close<img class="svg-formater" src="img/all-icons/close.svg" alt=""/></div>
+                    </div>
+                    <div class="left-sidebar-body">
+                      <div class="sidebar-inner">
+                        <div class="widget__price-filter widget-padding">
+                          <h3 class="widget-title">Price Filter</h3>
+                          <div class="price-filter-range" id="slider-range" name="rangeInput"></div>
+                          <div class="price-filter__input-wrap">
+                            <input class="price-range-field" id="min_price" type="text" min="0" max="9900" oninput="validity.valid||(value='0');"/>
+                            <input class="price-range-field" id="max_price" type="text" min="0" max="10000" oninput="validity.valid||(value='10000');"/>
+                            <button class="price-range-search" id="price-range-submit"><img class="svg-formater" src="img/all-icons/search-price.svg" alt=""/></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="widget__size widget-padding">
+                        <h3 class="widget-title">Size</h3>
+                        <ul class="widget__size-list">
+                          <li><a href="">xs</a></li>
+                          <li class="active-size"><a href="">s</a></li>
+                          <li><a href="">m</a></li>
+                          <li><a href="">l</a></li>
+                          <li><a href="">sl</a></li>
+                          <li><a href="">xl</a></li>
+                          <li><a href="">xxl</a></li>
+                        </ul>
+                      </div>
+                      <div class="widget__colors widget-padding">
+                        <h3 class="widget-title">Color</h3>
+                        <ul class="widget__colors-list">
+                          <li class="active-color"><a href="">Black</a></li>
+                          <li><a href="">White</a></li>
+                          <li><a href="">Blue</a></li>
+                          <li><a href="">Yellow</a></li>
+                          <li><a href="">Green</a></li>
+                        </ul>
+                      </div>
+                      <div class="widget__rated widget-padding">
+                        <h3 class="widget-title">Top Rated</h3>
+                        <ul class="product_list_widget">
+                          <li><span class="widget-product-img"><a class="widget-product-img" href=""><img src="img/img-products/product-min.png" alt=""/></a><span class="widget-product-info"><a class="best-seller_product-title" href="">Casual men wearing cool shoe</a>
+                                <div class="best-seller_product-price">$250.00</div></span></span></li>
+                          <li><span class="widget-product-img"><a class="widget-product-img" href=""><img src="img/img-products/product-min.png" alt=""/></a><span class="widget-product-info"><a class="best-seller_product-title" href="">Casual men wearing cool shoe</a>
+                                <div class="best-seller_product-price">$250.00</div></span></span></li>
+                          <li><span class="widget-product-img"><a class="widget-product-img" href=""><img src="img/img-products/product-min.png" alt=""/></a><span class="widget-product-info"><a class="best-seller_product-title" href="">Casual men wearing cool shoe</a>
+                                <div class="best-seller_product-price">$250.00</div></span></span></li>
+                        </ul>
+                      </div>
+                      <div class="aside-ad">
+                        <div class="slider-add">
+                          <div class="slider-add__item"><img class="slider-add-img" src="img/banner/banner.png" alt=""/></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pruducts-result-count">Showing <span class="pruducts-result-count1">
+                  1&ndash;</span><span class="pruducts-result-count2">
+                  12 of </span><span class="pruducts-result-count3">
+                  44 results</span></div>
+              <form class="pruducts-sortby" method="get">
+                <select class="orderby" name="orderby">
+                  <option value="menu_order" selected="selected">Default sorting</option>
+                  <option value="popularity">Sort by popularity</option>
+                  <option value="rating">Sort by average rating</option>
+                  <option value="date">Sort by latest</option>
+                  <option value="price">Sort by price: low to high</option>
+                  <option value="price-desc">Sort by price: high to low</option>
+                </select>
+                <input type="hidden" name="per_row" value="2"/>
+              </form>
+            </div>
+            <div class="products-list__wrap">
+              <div class="products-list-full-grid">
+                <div class="best-seller_slider-item">
+                  <div class="best-seller_product-img">
+                    <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+                  </div>
+                  <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+                  <div class="best-seller_product-price">$250.00</div>
+                  <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                </div>
+                <div class="best-seller_slider-item">
+                  <div class="best-seller_product-img">
+                    <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+                  </div>
+                  <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+                  <div class="best-seller_product-price">$250.00</div>
+                  <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                </div>
+                <div class="best-seller_slider-item">
+                  <div class="best-seller_product-img">
+                    <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+                  </div>
+                  <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+                  <div class="best-seller_product-price">$250.00</div>
+                  <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                </div>
+                <div class="best-seller_slider-item">
+                  <div class="best-seller_product-img">
+                    <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+                  </div>
+                  <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+                  <div class="best-seller_product-price">$250.00</div>
+                  <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                </div>
+                <div class="best-seller_slider-item">
+                  <div class="best-seller_product-img">
+                    <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+                  </div>
+                  <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+                  <div class="best-seller_product-price">$250.00</div>
+                  <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                </div>
+                <div class="best-seller_slider-item">
+                  <div class="best-seller_product-img">
+                    <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+                  </div>
+                  <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+                  <div class="best-seller_product-price">$250.00</div>
+                  <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                </div>
+                <div class="best-seller_slider-item">
+                  <div class="best-seller_product-img">
+                    <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+                  </div>
+                  <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+                  <div class="best-seller_product-price">$250.00</div>
+                  <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                </div>
+                <div class="best-seller_slider-item">
+                  <div class="best-seller_product-img">
+                    <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+                  </div>
+                  <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+                  <div class="best-seller_product-price">$250.00</div>
+                  <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                </div>
+                <div class="best-seller_slider-item">
+                  <div class="best-seller_product-img">
+                    <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+                  </div>
+                  <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+                  <div class="best-seller_product-price">$250.00</div>
+                  <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                </div>
+                <div class="best-seller_slider-item">
+                  <div class="best-seller_product-img">
+                    <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+                  </div>
+                  <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+                  <div class="best-seller_product-price">$250.00</div>
+                  <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                </div>
+                <div class="best-seller_slider-item">
+                  <div class="best-seller_product-img">
+                    <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+                  </div>
+                  <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+                  <div class="best-seller_product-price">$250.00</div>
+                  <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                </div>
+                <div class="best-seller_slider-item">
+                  <div class="best-seller_product-img">
+                    <div class="product-img__hover"><a href=""><img class="svg-formater cart-btn__add" src="img/all-icons/w-cart.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/like.svg" alt=""/></a><a href=""><img class="svg-formater" src="img/all-icons/compare.svg" alt=""/></a></div><img class="product-img" src="img/img-products/tishort.png" alt=""/>
+                  </div>
+                  <div class="best-seller_product-title"><a href="">Cruise Dual Analog</a></div>
+                  <div class="best-seller_product-price">$250.00</div>
+                  <div class="best-seller_product-stars"><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star.svg" alt=""/><img class="svg-formater" src="img/all-icons/star-e.svg" alt=""/></div>
+                </div>
+              </div>
+              <div class="products-footer">
+                <nav class="products-pagination">
+                  <ul class="page-numbers">
+                    <li><a class="active" href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li><a href="">...</a></li>
+                    <li><a href=""><img src="img/all-icons/arrow.svg" alt=""/></a></li>
+                    <li><a href=""><img src="img/all-icons/arrows.svg" alt=""/></a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="top__footer-wrap">
+        <div class="top__footer footer-container">
+          <div class="contact-with">We&rsquo;re confident we&rsquo;ve provided all the best for you. Stay connect with us</div>
+          <div class="icons-social"><a href=""><img class="svg svg-formater" src="img/all-icons/facebook.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/twitter.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/instagram.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/linkedin.svg" alt=""/></a><a href=""><img class="svg svg-formater" src="img/all-icons/behance.svg" alt=""/></a></div>
+        </div>
+      </div>
+      <div class="center__footer footer-container">
+        <div class="site-footer__widget footer-links">
+          <h5 class="footer-links__title">Information</h5>
+          <ul class="footer-links__list">
+            <li><a href="">Delivery Information</a></li>
+            <li><a href="">Discount</a></li>
+            <li><a href="">Sitemap</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">My Account</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__widget footer-links">
+          <h5 class="footer-links__title">My account</h5>
+          <ul class="footer-links__list">
+            <li><a href="">Sign In</a></li>
+            <li><a href="">View Cart</a></li>
+            <li><a href="">My Wishlist</a></li>
+            <li><a href="">Check out</a></li>
+            <li><a href="">Track My Order</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__widget footer-links">
+          <h5 class="footer-links__title">Help</h5>
+          <ul class="footer-links__list">
+            <li><a href="">F.A.Q</a></li>
+            <li><a href="">Shipping</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__widget footer-links">
+          <h5 class="footer-links__title">Contact info</h5>
+          <ul class="footer-links__list">
+            <li><a href=""><img class="svg-2 svg-formater" src="img/all-icons/globe.svg" alt=""/> 1234 Your
+                                        Address, Country</a></li>
+            <li><a href=""><img class="svg-3 svg-formater" src="img/all-icons/phone.svg" alt=""/>+1 234 5678
+                                        9999</a></li>
+            <li><a class="footer-email" href=""><img class="svg-3 svg-formater" src="img/all-icons/envelope.svg" alt=""/>mail@domain.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom__fotter-wrap">
+        <div class="bottom__fotter footer-container">
+          <div class="bottom__fotter-copyright">
+            Copyright 2017 RenoshopBee all right reserved - Design by
+            BeeStudios
+          </div>
+          <div class="site-footer__payments"><img src="img/all-icons/visa.png" alt=""/><img src="img/all-icons/paypal.png" alt=""/><img src="img/all-icons/amazon.png" alt=""/><img src="img/all-icons/maestro.png" alt=""/><img src="img/all-icons/card.png" alt=""/></div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+      <script src="js/libs.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/price-plus-minis.js"></script>
+      <script src="js/price_range_script.js"></script>
+      <script src="js/jquery.zoom.min.js"></script>
+    </footer>
+  </body>
+</html>

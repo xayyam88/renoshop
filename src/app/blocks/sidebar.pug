@@ -1,0 +1,98 @@
+.sidebar-inner
+  .widget__categories.widget-padding.padding-none
+    h3.widget-title Categories
+    ul.menu-categories
+      li
+        a(href='')
+          | accessories 
+          span (15)
+      li
+        a(href='')
+          | Dresses  
+          span (50)
+      li
+        a(href='')
+          | Women 
+          span (150)
+      li
+        a(href='')
+          | Men 
+          span (150)
+      li
+        a(href='')
+          | Watch 
+          span (150)
+      li
+        a(href='')
+          | Clothing 
+          span (150)
+      li
+        a(href='')
+          | Bags 
+          span (150)
+  .widget__price-filter.widget-padding
+    h3.widget-title Price Filter
+    #slider-range.price-filter-range(name='rangeInput')
+    .price-filter__input-wrap
+        input#min_price.price-range-field(type='text', min='0', max='9900', oninput="validity.valid||(value='0');")
+        input#max_price.price-range-field(type='text', min='0', max='10000', oninput="validity.valid||(value='10000');")
+        button#price-range-submit.price-range-search
+            img.svg-formater(src='img/all-icons/search-price.svg', alt='')
+  .widget__size.widget-padding
+    h3.widget-title Size
+    ul.widget__size-list
+      li
+        a(href='') xs
+      li.active-size
+        a(href='') s
+      li
+        a(href='') m
+      li
+        a(href='') l
+      li
+        a(href='') sl
+      li
+        a(href='') xl
+      li
+        a(href='') xxl
+  .widget__colors.widget-padding
+    h3.widget-title Color
+    ul.widget__colors-list
+      li.active-color
+        a(href='') Black
+      li
+        a(href='') White
+      li
+        a(href='') Blue
+      li
+        a(href='') Yellow
+      li
+        a(href='') Green
+  .widget__rated.widget-padding
+    h3.widget-title Top Rated
+    ul.product_list_widget
+      li
+        span.widget-product-img
+          a.widget-product-img(href='')
+            img(src='img/img-products/product-min.png', alt='')
+          span.widget-product-info
+            a.best-seller_product-title(href='') Casual men wearing cool shoe
+            .best-seller_product-price $250.00
+      li
+        span.widget-product-img
+          a.widget-product-img(href='')
+            img(src='img/img-products/product-min.png', alt='')
+          span.widget-product-info
+            a.best-seller_product-title(href='') Casual men wearing cool shoe
+            .best-seller_product-price $250.00
+      li
+        span.widget-product-img
+          a.widget-product-img(href='')
+            img(src='img/img-products/product-min.png', alt='')
+          span.widget-product-info
+            a.best-seller_product-title(href='') Casual men wearing cool shoe
+            .best-seller_product-price $250.00
+  .aside-ad
+    .slider-add
+      .slider-add__item
+        img.slider-add-img(src='img/banner/banner.png', alt='')

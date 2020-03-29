@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        title Document
+        link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap', rel='stylesheet')
+        link(rel='stylesheet', href='css/style.min.css')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css')
+        script(src='https://code.jquery.com/jquery-1.12.4.js')
+        script(src='js/tabs.js')
+    body
+        .main-container
+        .cart-wrap__shower
+        header
+            include blocks/header.pug
+        //- Header end      
+        main 
+            .container-categorys
+                ul.breadcrumb
+                    li
+                        a(href='#') Home
+                    li
+                        a(href='#') Page
+                    li
+                        a(href='#') Shop
+                    li.active Comparison
+                .container-inner-categorys
+                    aside.sidebar-container
+                        include blocks/sidebar.pug
+                    .products-list-container
+                        .pruducts-top-filters
+                            .show-sidebar__wrap
+                                .show-sidebar
+                                    .show-sidebar-buttom
+                                        img.svg-formater(src='img/all-icons/menu.svg', alt='')
+                                        span Show sidebar
+                                    .left-sidebar
+                                        .left-sidebar-header.cart-wrap__header
+                                            h3.widget-title Filter 
+                                                span product
+                                            .close-side-widget close
+                                                img.svg-formater(src='img/all-icons/close.svg', alt='')
+                                        .left-sidebar-body
+                                            .sidebar-inner
+                                                .widget__price-filter.widget-padding
+                                                    h3.widget-title Price Filter
+                                                    #slider-range.price-filter-range(name='rangeInput')
+                                                    .price-filter__input-wrap
+                                                        input#min_price.price-range-field(type='text', min='0', max='9900', oninput="validity.valid||(value='0');")
+                                                        input#max_price.price-range-field(type='text', min='0', max='10000', oninput="validity.valid||(value='10000');")
+                                                        button#price-range-submit.price-range-search
+                                                            img.svg-formater(src='img/all-icons/search-price.svg', alt='')
+                                            .widget__size.widget-padding
+                                                h3.widget-title Size
+                                                ul.widget__size-list
+                                                    li
+                                                        a(href='') xs
+                                                    li.active-size
+                                                        a(href='') s
+                                                    li
+                                                        a(href='') m
+                                                    li
+                                                        a(href='') l
+                                                    li
+                                                        a(href='') sl
+                                                    li
+                                                        a(href='') xl
+                                                    li
+                                                        a(href='') xxl
+                                            .widget__colors.widget-padding
+                                                h3.widget-title Color
+                                                ul.widget__colors-list
+                                                    li.active-color
+                                                        a(href='') Black
+                                                    li
+                                                        a(href='') White
+                                                    li
+                                                        a(href='') Blue
+                                                    li
+                                                        a(href='') Yellow
+                                                    li
+                                                        a(href='') Green
+                                            .widget__rated.widget-padding
+                                                h3.widget-title Top Rated
+                                                ul.product_list_widget
+                                                    li
+                                                        span.widget-product-img
+                                                            a.widget-product-img(href='')
+                                                                img(src='img/img-products/product-min.png', alt='')
+                                                            span.widget-product-info
+                                                                a.best-seller_product-title(href='') Casual men wearing cool shoe
+                                                                .best-seller_product-price $250.00
+                                                    li
+                                                        span.widget-product-img
+                                                            a.widget-product-img(href='')
+                                                                img(src='img/img-products/product-min.png', alt='')
+                                                            span.widget-product-info
+                                                                a.best-seller_product-title(href='') Casual men wearing cool shoe
+                                                                .best-seller_product-price $250.00
+                                                    li
+                                                        span.widget-product-img
+                                                            a.widget-product-img(href='')
+                                                                img(src='img/img-products/product-min.png', alt='')
+                                                            span.widget-product-info
+                                                                a.best-seller_product-title(href='') Casual men wearing cool shoe
+                                                                .best-seller_product-price $250.00
+                                            .aside-ad
+                                                .slider-add
+                                                    .slider-add__item
+                                                        img.slider-add-img(src='img/banner/banner.png', alt='')
+                            .pruducts-result-count Showing 
+                                span.pruducts-result-count1 1
+                                    | &ndash;
+                                span.pruducts-result-count2 12
+                                    |  of 
+                                span.pruducts-result-count3 44
+                                    |  results
+                            form.pruducts-sortby(method='get')
+                                select.orderby(name='orderby')
+                                    option(value='menu_order', selected='selected') Default sorting
+                                    option(value='popularity') Sort by popularity
+                                    option(value='rating') Sort by average rating
+                                    option(value='date') Sort by latest
+                                    option(value='price') Sort by price: low to high
+                                    option(value='price-desc') Sort by price: high to low
+                                input(type='hidden', name='per_row', value='2')
+                        .products-list__wrap
+                            .products-list__category-list
+                                .best-seller_slider-item
+                                    .product-img-wrap
+                                        .best-seller_product-img
+                                            img.product-img(src='img/img-products/tishort.png', alt='')
+                                    .product-content-wrap       
+                                        .best-seller_product-title
+                                            a(href='') Cruise Dual Analog
+                                        .best-seller_product-price $250.00
+                                        .best-seller_product-stars
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star-e.svg', alt='')
+                                        p.best-seller_product-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        span.best-seller_product-tag Shoes, T-Shirt teen
+                                        .best-seller_product-add
+                                            button.button.buttom-add-cart
+                                                img.svg-formater(src='img/all-icons/cart-list.svg', alt='')
+                                                | Add to cart
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/like-list.svg', alt='')
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/compare-list.svg', alt='')
+                                .best-seller_slider-item
+                                    .product-img-wrap
+                                        .best-seller_product-img
+                                            img.product-img(src='img/img-products/tishort.png', alt='')
+                                    .product-content-wrap       
+                                        .best-seller_product-title
+                                            a(href='') Cruise Dual Analog
+                                        .best-seller_product-price $250.00
+                                        .best-seller_product-stars
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star-e.svg', alt='')
+                                        p.best-seller_product-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        span.best-seller_product-tag Shoes, T-Shirt teen
+                                        .best-seller_product-add
+                                            button.button.buttom-add-cart
+                                                img.svg-formater(src='img/all-icons/cart-list.svg', alt='')
+                                                | Add to cart
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/like-list.svg', alt='')
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/compare-list.svg', alt='')
+                                .best-seller_slider-item
+                                    .product-img-wrap
+                                        .best-seller_product-img
+                                            img.product-img(src='img/img-products/tishort.png', alt='')
+                                    .product-content-wrap       
+                                        .best-seller_product-title
+                                            a(href='') Cruise Dual Analog
+                                        .best-seller_product-price $250.00
+                                        .best-seller_product-stars
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star-e.svg', alt='')
+                                        p.best-seller_product-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        span.best-seller_product-tag Shoes, T-Shirt teen
+                                        .best-seller_product-add
+                                            button.button.buttom-add-cart
+                                                img.svg-formater(src='img/all-icons/cart-list.svg', alt='')
+                                                | Add to cart
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/like-list.svg', alt='')
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/compare-list.svg', alt='')
+                                .best-seller_slider-item
+                                    .product-img-wrap
+                                        .best-seller_product-img
+                                            img.product-img(src='img/img-products/tishort.png', alt='')
+                                    .product-content-wrap       
+                                        .best-seller_product-title
+                                            a(href='') Cruise Dual Analog
+                                        .best-seller_product-price $250.00
+                                        .best-seller_product-stars
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star-e.svg', alt='')
+                                        p.best-seller_product-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        span.best-seller_product-tag Shoes, T-Shirt teen
+                                        .best-seller_product-add
+                                            button.button.buttom-add-cart
+                                                img.svg-formater(src='img/all-icons/cart-list.svg', alt='')
+                                                | Add to cart
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/like-list.svg', alt='')
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/compare-list.svg', alt='')
+                                .best-seller_slider-item
+                                    .product-img-wrap
+                                        .best-seller_product-img
+                                            img.product-img(src='img/img-products/tishort.png', alt='')
+                                    .product-content-wrap       
+                                        .best-seller_product-title
+                                            a(href='') Cruise Dual Analog
+                                        .best-seller_product-price $250.00
+                                        .best-seller_product-stars
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star-e.svg', alt='')
+                                        p.best-seller_product-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        span.best-seller_product-tag Shoes, T-Shirt teen
+                                        .best-seller_product-add
+                                            button.button.buttom-add-cart
+                                                img.svg-formater(src='img/all-icons/cart-list.svg', alt='')
+                                                | Add to cart
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/like-list.svg', alt='')
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/compare-list.svg', alt='')
+                                .best-seller_slider-item
+                                    .product-img-wrap
+                                        .best-seller_product-img
+                                            img.product-img(src='img/img-products/tishort.png', alt='')
+                                    .product-content-wrap       
+                                        .best-seller_product-title
+                                            a(href='') Cruise Dual Analog
+                                        .best-seller_product-price $250.00
+                                        .best-seller_product-stars
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star-e.svg', alt='')
+                                        p.best-seller_product-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        span.best-seller_product-tag Shoes, T-Shirt teen
+                                        .best-seller_product-add
+                                            button.button.buttom-add-cart
+                                                img.svg-formater(src='img/all-icons/cart-list.svg', alt='')
+                                                | Add to cart
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/like-list.svg', alt='')
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/compare-list.svg', alt='')
+                                .best-seller_slider-item
+                                    .product-img-wrap
+                                        .best-seller_product-img
+                                            img.product-img(src='img/img-products/tishort.png', alt='')
+                                    .product-content-wrap       
+                                        .best-seller_product-title
+                                            a(href='') Cruise Dual Analog
+                                        .best-seller_product-price $250.00
+                                        .best-seller_product-stars
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star-e.svg', alt='')
+                                        p.best-seller_product-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        span.best-seller_product-tag Shoes, T-Shirt teen
+                                        .best-seller_product-add
+                                            button.button.buttom-add-cart
+                                                img.svg-formater(src='img/all-icons/cart-list.svg', alt='')
+                                                | Add to cart
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/like-list.svg', alt='')
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/compare-list.svg', alt='')    
+                                .best-seller_slider-item
+                                    .product-img-wrap
+                                        .best-seller_product-img
+                                            img.product-img(src='img/img-products/tishort.png', alt='')
+                                    .product-content-wrap       
+                                        .best-seller_product-title
+                                            a(href='') Cruise Dual Analog
+                                        .best-seller_product-price $250.00
+                                        .best-seller_product-stars
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star.svg', alt='')
+                                            img.svg-formater(src='img/all-icons/star-e.svg', alt='')
+                                        p.best-seller_product-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        span.best-seller_product-tag Shoes, T-Shirt teen
+                                        .best-seller_product-add
+                                            button.button.buttom-add-cart
+                                                img.svg-formater(src='img/all-icons/cart-list.svg', alt='')
+                                                | Add to cart
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/like-list.svg', alt='')
+                                            a(href='')
+                                                img.svg-formater(src='img/all-icons/compare-list.svg', alt='')    
+                            .products-footer
+                                nav.products-pagination
+                                    ul.page-numbers
+                                        li
+                                            a.active(href='') 1
+                                        li
+                                            a(href='') 2
+                                        li
+                                            a(href='') 3
+                                        li
+                                            a(href='') 4
+                                        li
+                                            a(href='') 5
+                                        li
+                                            a(href='') ...
+                                        li
+                                            a(href='')
+                                                    img(src='img/all-icons/arrow.svg', alt='')
+                                        li
+                                            a(href='')
+                                                    img(src='img/all-icons/arrows.svg', alt='')
+                                                              
+        include blocks/fotter.pug
+        //- fotter end
