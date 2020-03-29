@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 35" width="38" height="35">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #464646 } 
+	</style>
+	<g id="Static-blocks">
+		<g id="Free delivery">
+			<path id="plane 2" class="shp0" d="M2 19.71L14.08 23.53L28.96 10.33L17.43 24.55L30.35 28.72L37 2L2 19.71ZM17.02 26.65L17.02 34L21.27 27.92L17.02 26.65Z" />
+		</g>
+	</g>
+</svg>

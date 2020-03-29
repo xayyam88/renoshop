@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 6" width="13" height="6">
+	<defs>
+		<image width="13" height="6" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAGCAYAAAAYLBS/AAAAP0lEQVQYlWNggAIbGxtBExOT3QzEAlNTUyVjY+MzxsbG/4nWYGJictfY2Pg/sZg8TTD/kOQ85IAwNjZeRYxaAC0+MykpuS6WAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="body">
+		<g id="Related Products">
+			<g id="Title ">
+				<g id="Prev">
+					<use id="fa-long-arrow-right" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

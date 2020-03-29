@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 35" width="43" height="35">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #464646 } 
+	</style>
+	<g id="Static-blocks">
+		<g id="Special offers">
+			<path id="diamond" class="shp0" d="M2.12 12.45L13.6 12.45L21.29 33.95L2.12 12.45ZM15.68 12.45L28.31 12.45L22.47 34L15.68 12.45ZM41.96 12.45L30.57 12.45L23.5 33.95L41.96 12.45ZM36.47 2.49L42 11.04L30.93 11.04L36.47 2.49ZM29.19 10.84L34.73 2L23.66 2L29.19 10.84ZM21.96 2.49L27.49 11.04L16.42 11.04L21.96 2.49ZM14.81 10.84L20.34 2L9.27 2L14.81 10.84ZM7.53 2.49L13.07 11.04L2 11.04L7.53 2.49Z" />
+		</g>
+	</g>
+</svg>
